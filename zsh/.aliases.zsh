@@ -7,6 +7,7 @@ alias ....='cd ../../..'
 alias dsk='cd ~/desktop'
 alias la='ls -la'
 alias dot='cd ~/.dotfiles'
+alias cloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias tree='ls -R | grep "^[.]/" | sed -e "s/:$//" -e "s/[^\/]*\//--/g" -e "s/^/   |/"'
 
 # git

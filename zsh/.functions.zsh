@@ -43,3 +43,19 @@ pgi() {
         echo "Error: No repository name provided"
     fi
 }
+
+hicons() {
+	defaults write com.apple.finder CreateDesktop -bool false
+	killall Finder
+	echo "Icons on desktop are hidden!"
+}
+
+sicons() {
+	defaults write com.apple.finder CreateDesktop -bool true
+	killall Finder
+	echo "Icons on desktop are shown!"
+}
+
+crun() {
+	cmake --build . && ./$1
+}
