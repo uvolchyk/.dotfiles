@@ -1,22 +1,26 @@
-# common
+# general
 
 alias ~='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias dsk='cd ~/desktop'
 alias la='ls -la'
-alias dot='cd ~/.dotfiles'
 alias cloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias tree='ls -R | grep "^[.]/" | sed -e "s/:$//" -e "s/[^\/]*\//--/g" -e "s/^/   |/"'
+alias dev='cd ~/Developer'
+alias dsk='cd ~/desktop'
+alias dot='cd ~/.dotfiles'
+alias sdot='source ~/.zshrc'
 
 # git
 alias gs='git status'
+alias ga='git add'
 alias gl='git log --pretty=oneline --graph'
 alias gb='git branch'
-alias ga='git add'
+
 alias gm='git merge'
 alias gf='git fetch'
+
 alias gch='git checkout'
 alias gps='git push'
 alias gpl='git pull'
@@ -25,13 +29,14 @@ alias gcl='git clone'
 alias grb='git rebase'
 alias grv='git revert'
 alias grs='git reset'
+alias grt='git restore'
 
 # python
 alias py='python3'
-alias py2='python'
 
 # xcode
 alias xc='xed .'
 
-# maven
-alias mvndflt='mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false'
+# tuist
+alias tue='tuist edit'
+alias tug='tuist generate'

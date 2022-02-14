@@ -44,18 +44,18 @@ pgi() {
     fi
 }
 
+crun() {
+	cmake --build . && ./$1
+}
+
 hicons() {
 	defaults write com.apple.finder CreateDesktop -bool false
 	killall Finder
-	echo "Icons on desktop are hidden!"
+	echo "😴 Icons removed"
 }
 
 sicons() {
 	defaults write com.apple.finder CreateDesktop -bool true
 	killall Finder
-	echo "Icons on desktop are shown!"
-}
-
-crun() {
-	cmake --build . && ./$1
+	echo "🤩 Icons returned"
 }
