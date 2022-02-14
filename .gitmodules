@@ -4,3 +4,6 @@
 [submodule "dependencies/zsh-syntax-highlighting"]
     path = dependencies/zsh-syntax-highlighting
     url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "dependencies/pure"]
+	path = dependencies/pure
+	url = https://github.com/sindresorhus/pure
