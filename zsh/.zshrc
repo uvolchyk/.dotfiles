@@ -9,6 +9,8 @@ source $DOT_HOME/dependencies/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $DOT_HOME/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOT_HOME/dependencies/pure/pure.zsh
 
+# pure
+
 fpath=("$DOT_HOME/dependencies/pure" $fpath)
 
 autoload -U promptinit; promptinit

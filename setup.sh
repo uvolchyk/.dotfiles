@@ -15,6 +15,7 @@ function setup_brew() {
     brew install gh
     brew install cocoapods
     brew install swiftlint
+    brew install bat
 }
 
 function setup_xcode() {
@@ -23,7 +24,13 @@ function setup_xcode() {
     done
 }
 
-source ~/.zshrc
+function setup_general() {
+    ln -s $DOT_HOME/git/.gitignore ~/.gitignore
+    ln -s $DOT_HOME/git/.gitconfig ~/.gitconfig
+}
+
+source ./zsh/.zshrc
 
 setup_brew
 setup_xcode
+setup_general
