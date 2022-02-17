@@ -4,6 +4,7 @@ function setup_brew() {
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 
+	brew install --cask iterm2
     brew install --cask visual-studio-code
     brew install --cask discord
     brew install --cask telegram
@@ -16,6 +17,7 @@ function setup_brew() {
     brew install cocoapods
     brew install swiftlint
     brew install bat
+    brew install tldr	
 }
 
 function setup_xcode() {

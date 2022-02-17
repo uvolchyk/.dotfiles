@@ -12,6 +12,9 @@ alias dsk='cd ~/desktop'
 alias dot='cd ~/.dotfiles'
 alias sdot='source ~/.zshrc'
 
+alias cat='bat'
+alias remal='cat ~/.dotfiles/zsh/.aliases.zsh'
+
 # git
 alias gs='git status'
 alias ga='git add'
