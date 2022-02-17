@@ -9,6 +9,8 @@ source $DOT_HOME/dependencies/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $DOT_HOME/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOT_HOME/dependencies/pure/pure.zsh
 
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#24A99B,bold"
+
 # pure
 
 fpath=("$DOT_HOME/dependencies/pure" $fpath)
