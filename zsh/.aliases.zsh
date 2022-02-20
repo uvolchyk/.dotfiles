@@ -18,7 +18,7 @@ alias remal='cat ~/.dotfiles/zsh/.aliases.zsh'
 # git
 alias gs='git status'
 alias ga='git add'
-alias gl='git log --pretty=oneline --graph'
+alias gl='git lg'
 alias gb='git branch'
 
 alias gm='git merge'

@@ -4,6 +4,7 @@ function setup_brew() {
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 
+	brew install --cask raycast
 	brew install --cask iterm2
     brew install --cask visual-studio-code
     brew install --cask discord
