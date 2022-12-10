@@ -4,13 +4,13 @@ function setup_brew() {
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 
-	brew install --cask raycast
-	brew install --cask iterm2
+	brew install --cask raycast            # fine grained spotlight replacement
+	brew install --cask warp               # one more terminal app to try
     brew install --cask visual-studio-code
     brew install --cask discord
     brew install --cask telegram
     brew install --cask proxyman
-    brew install --cask postman
+    brew install --cask postman           
     brew install --cask obsidian
 
     brew install micro

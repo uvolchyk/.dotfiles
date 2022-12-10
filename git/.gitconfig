@@ -1,5 +1,5 @@
 [user]
-	name = trotnic
+	name = Uladzislau Volchyk
 	email = uladzislau.volchyk@gmail.com
 [core]
 	editor = micro
@@ -8,3 +8,7 @@
 	helper = osxkeychain
 [include]
 	path = ~/.github_token
+#[includeIf "gitdir:~/Developer/Mobile-Innowise-Group/ayoba/"]
+#	path = ~/Developer/Mobile-Innowise-Group/ayoba/.gitconfig_papaia
+#[includeIf "gitdir:~/Developer/Mobile-Innowise-Group/"]
+#	path = ~/Developer/Mobile-Innowise-Group/.gitconfig_include
