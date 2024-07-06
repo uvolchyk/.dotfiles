@@ -39,6 +39,7 @@ alias py='python3'
 
 # xcode
 alias xc='xed .'
+alias xcg='xcodegen'
 
 # tuist
 alias tue='tuist edit'

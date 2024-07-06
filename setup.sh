@@ -5,7 +5,7 @@ function setup_brew() {
     fi
 
 	brew install --cask raycast
-	brew install --cask iterm2
+	brew install --cask warp
     brew install --cask visual-studio-code
     brew install --cask discord
     brew install --cask telegram
