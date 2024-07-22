@@ -6,7 +6,9 @@ function setup_brew() {
 
 	brew install --cask raycast
 	brew install --cask warp
+    brew install --cask arc
     brew install --cask visual-studio-code
+    brew install --cask fork
     brew install --cask discord
     brew install --cask telegram
     brew install --cask proxyman
@@ -31,6 +33,8 @@ function setup_general() {
     ln -s $DOT_HOME/git/.gitignore ~/.gitignore
     ln -s $DOT_HOME/git/.gitconfig ~/.gitconfig
 }
+
+curl https://mise.run | sh
 
 source ./zsh/.zshrc
 

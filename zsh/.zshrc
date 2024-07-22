@@ -17,3 +17,5 @@ source $DOT_HOME/dependencies/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $DOT_HOME/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#24A99B,bold"
+
+eval "$(~/.local/bin/mise activate zsh)"
