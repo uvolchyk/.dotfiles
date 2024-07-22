@@ -14,6 +14,8 @@ function setup_brew() {
     brew install --cask proxyman
     brew install --cask postman
     brew install --cask obsidian
+    brew install --cask figma
+    brew install --cask notion
 
     brew install micro
     brew install gh
