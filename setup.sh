@@ -26,8 +26,10 @@ function setup_brew() {
 }
 
 function setup_xcode() {
-    for FILE in xcode/theme/*; 
-    do cp $FILE ~/Library/Developer/Xcode/UserData/FontAndColorThemes; 
+    local THEME_DIR=~/Library/Developer/Xcode/UserData/FontAndColorThemes
+    mkdir -p "$THEME_DIR"
+    for FILE in xcode/theme/*; do
+        cp "$FILE" "$THEME_DIR"
     done
 }
 
