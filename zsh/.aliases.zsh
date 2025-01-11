@@ -4,13 +4,18 @@ alias ~='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
 alias la='ls -la'
+
 alias cloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias tree='ls -R | grep "^[.]/" | sed -e "s/:$//" -e "s/[^\/]*\//--/g" -e "s/^/   |/"'
-alias dev='cd ~/Developer'
+
+alias dev='cd ~/developer'
 alias dsk='cd ~/desktop'
+
 alias dot='cd ~/.dotfiles'
 alias sdot='source ~/.zshrc'
+alias edot='code ~/.dotfiles'
 
 alias cat='bat'
 alias remal='cat ~/.dotfiles/zsh/.aliases.zsh'

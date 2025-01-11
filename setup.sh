@@ -1,44 +1,44 @@
+#!/bin/zsh
+
 function setup_brew() {
-    which brew > /dev/null
-    if ! [[ $? ]] then
+  which brew > /dev/null
+  if ! [[ $? ]] then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    fi
+  fi
 
-	brew install --cask raycast
-	brew install --cask warp
-    brew install --cask arc
-    brew install --cask visual-studio-code
-    brew install --cask fork
-    brew install --cask discord
-    brew install --cask telegram
-    brew install --cask proxyman
-    brew install --cask postman
-    brew install --cask obsidian
-    brew install --cask figma
-    brew install --cask notion
+	brew install --cask raycast # spotlight
+	brew install --cask ghostty # terminal
+  brew install --cask dash # documentation
+  brew install --cask visual-studio-code # code editor
+  brew install --cask fork # git client
+  brew install --cask discord # ...
+  brew install --cask telegram # ...
+  brew install --cask proxyman # proxy
+  brew install --cask postman # api
+  brew install --cask figma # design
+  brew install --cask notion # note
+  brew install --cask obsidian # note, but better
 
-    brew install micro
-    brew install gh
-    brew install cocoapods
-    brew install swiftlint
-    brew install bat
-    brew install tldr	
+  brew install gh
+  brew install bat
+  brew install mise
+  brew install micro
+  brew install swiftlint
+  brew install cocoapods
 }
 
 function setup_xcode() {
-    local THEME_DIR=~/Library/Developer/Xcode/UserData/FontAndColorThemes
-    mkdir -p "$THEME_DIR"
-    for FILE in xcode/theme/*; do
-        cp "$FILE" "$THEME_DIR"
-    done
+  local THEME_DIR=~/Library/Developer/Xcode/UserData/FontAndColorThemes
+  mkdir -p "$THEME_DIR"
+  for FILE in xcode/theme/*; do
+    cp "$FILE" "$THEME_DIR"
+  done
 }
 
 function setup_general() {
-    ln -s $DOT_HOME/git/.gitignore ~/.gitignore
-    ln -s $DOT_HOME/git/.gitconfig ~/.gitconfig
+  ln -s $DOT_HOME/git/.gitignore ~/.gitignore
+  ln -s $DOT_HOME/git/.gitconfig ~/.gitconfig
 }
-
-curl https://mise.run | sh
 
 source ./zsh/.zshrc
 

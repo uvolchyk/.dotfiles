@@ -1,21 +1,23 @@
 md() {
-    if [[ "$1" ]]
-    then
-        mkdir "$1"
-        cd "$1"
-    else 
-        echo "Error: no folder name provided"
-    fi
+  if [[ "$1" ]]
+  then
+    mkdir "$1"
+    cd "$1"
+  else 
+    echo "🤔 - Please provide a directory name"
+  fi
 }
 
-hicons() {
-	defaults write com.apple.finder CreateDesktop -bool false
-	killall Finder
-	echo "😴 Icons removed"
+toggleIcons() {
+  defaults write com.apple.finder CreateDesktop -bool "$1"
+  killall Finder
+  echo "$2"
 }
 
 sicons() {
-	defaults write com.apple.finder CreateDesktop -bool true
-	killall Finder
-	echo "🤩 Icons returned"
+  toggleIcons true "✅ - Done"
+}
+
+hicons() {
+  toggleIcons false "✅ - Done"
 }

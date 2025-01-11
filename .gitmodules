@@ -1,9 +1,9 @@
 [submodule "dependencies/zsh-autosuggestions"]
-    path = dependencies/zsh-autosuggestions
-    url = https://github.com/zsh-users/zsh-autosuggestions
+  path = dependencies/zsh-autosuggestions
+  url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "dependencies/zsh-syntax-highlighting"]
-    path = dependencies/zsh-syntax-highlighting
-    url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule "dependencies/pure"]
-	path = dependencies/pure
-	url = https://github.com/sindresorhus/pure
+  path = dependencies/zsh-syntax-highlighting
+  url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "dependencies/rose-pine-xcode"]
+  path = dependencies/rose-pine-xcode
+  url = https://github.com/ldakhoa/rose-pine-xcode
