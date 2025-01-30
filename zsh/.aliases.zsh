@@ -49,3 +49,6 @@ alias xcg='xcodegen'
 # tuist
 alias tue='tuist edit'
 alias tug='tuist generate'
+
+# web
+alias bb='bun --bun'
