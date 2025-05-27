@@ -8,8 +8,6 @@
 	helper = osxkeychain
 [include]
 	path = ~/.github_token
-[includeIf "gitdir:~/Developer/iMobile/"]
-	path = ~/Developer/iMobile/.gitconfig_include
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%ae>%Creset' --abbrev-commit
 [filter "lfs"]
@@ -17,9 +15,3 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[pull]
-	rebase = false
-[rebase]
-	autostash = false
-[merge]
-	autostash = false

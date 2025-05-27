@@ -9,22 +9,21 @@ function setup_brew() {
 	brew install --cask raycast # spotlight
 	brew install --cask ghostty # terminal
   brew install --cask dash # documentation
+  brew install --cask deepl
   brew install --cask visual-studio-code # code editor
-  brew install --cask fork # git client
   brew install --cask discord # ...
   brew install --cask telegram # ...
   brew install --cask proxyman # proxy
   brew install --cask postman # api
   brew install --cask figma # design
-  brew install --cask notion # note
-  brew install --cask obsidian # note, but better
+  brew install --cask obsidian # notes
 
   brew install gh
+  brew install lazygit
   brew install bat
   brew install mise
   brew install micro
-  brew install swiftlint
-  brew install cocoapods
+  brew install cmake
 }
 
 function setup_xcode() {
@@ -37,6 +36,7 @@ function setup_xcode() {
 
 function setup_general() {
   ln -s $DOT_HOME/git/.gitignore ~/.gitignore
+  ln -s $DOT_HOME/git/.github_token ~/.github_token
   ln -s $DOT_HOME/git/.gitconfig ~/.gitconfig
 }
 
