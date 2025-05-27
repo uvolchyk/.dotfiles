@@ -7,17 +7,3 @@ md() {
     echo "🤔 - Please provide a directory name"
   fi
 }
-
-toggleIcons() {
-  defaults write com.apple.finder CreateDesktop -bool "$1"
-  killall Finder
-  echo "$2"
-}
-
-sicons() {
-  toggleIcons true "✅ - Done"
-}
-
-hicons() {
-  toggleIcons false "✅ - Done"
-}

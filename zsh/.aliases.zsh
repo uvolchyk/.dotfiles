@@ -18,7 +18,6 @@ alias sdot='source ~/.zshrc'
 alias edot='code ~/.dotfiles'
 
 alias cat='bat'
-alias remal='cat ~/.dotfiles/zsh/.aliases.zsh'
 
 # git
 alias gs='git status'
@@ -26,25 +25,14 @@ alias ga='git add'
 alias gl='git lg'
 alias gb='git branch'
 
-alias gm='git merge'
-alias gf='git fetch'
-
 alias gch='git checkout'
 alias gps='git push'
 alias gpl='git pull'
 alias gcm='git commit -m'
 alias gcl='git clone'
-alias grb='git rebase'
-alias grv='git revert'
-alias grs='git reset'
-alias grt='git restore'
 
 # python
 alias py='python3'
-
-# xcode
-alias xc='xed .'
-alias xcg='xcodegen'
 
 # tuist
 alias tue='tuist edit'
